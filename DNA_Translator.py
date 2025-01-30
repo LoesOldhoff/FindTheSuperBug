@@ -54,8 +54,14 @@ def translate(sequence):
         'GGT': 'G'}
 
     proteins = []
-    # Add your code here
-
+    for frame in range(3):   #  Runs the code 3 times, one time for each reading frame
+        sequence_to_translate = sequence[frame:]
+        for i in range(0, len(sequence_to_translate), 3):
+            codon = sequence_to_translate[i: i+3] 
+            print(codon)
+        
+            # Insert missing code here 
+    
     return proteins
 
 def write_fasta(header, sequence, output_filename):
@@ -66,16 +72,16 @@ def write_fasta(header, sequence, output_filename):
     Mind the filename!!
     """
     with open(output_filename, 'w') as output:
-        output.write(header)
+        output.write(header + '\n')
         while len(sequence) > 0:
             output.write(sequence[0:70] + '\n')
             sequence = sequence[70:]
 
 def main():
     file_to_translate = ''
-    sequence, header = read_fasta(file_to_translate)
-    translate(sequence)
-    write_fasta(header, sequence, 'test_output.fasta')
+    header, sequence = read_fasta(file_to_translate)
+    protein = translate(sequence)
+    write_fasta(header, protein, 'test_output.fasta')
 
 
 main()
