@@ -30,4 +30,4 @@ Heb je het eiwit gevonden?
 Dan is de laatste stap het ontmaskeren van de Superbug
 Hiervoor gebruiken we een (online) database en een krachtig algoritme (BLAST) dat razendsnel stukken DNA en eiwit met elkaar kan vergelijken. 
 Gebruik deze link: [NCBI's Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
-Voer je (eiwit!!)sequentie in en vind de Superbug!!!
+**Voer je (eiwit!!)sequentie in en vind de Superbug!!!**
