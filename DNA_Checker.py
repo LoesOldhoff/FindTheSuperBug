@@ -76,11 +76,4 @@ def main():
     print("Running DNA_Checker.py")
     # Voeg hier je code toe
 
-    multifasta_to_multiple_files('Samples.fasta')
-    for i in range(20):
-        header, sequence = read_fasta(f"Sample {i}.fasta")
-        print(header)
-        get_GC_percentage(sequence)
-    #get_GC_percentage(test)
-
 main()
