@@ -35,7 +35,7 @@ def multifasta_to_multiple_files(filename):
 
     # Then write data to new files
     for i in range(len(sequences)):
-        with open(str(headers[i]).replace('>', '') + '.fasta', 'w') as output_file:
+        with open(str(headers[i]).replace('>', '').replace(' ', '_') + '.fasta', 'w') as output_file:
             output_file.write(headers[i] + '\n')
             dna_to_write = sequences[i]
             while len(dna_to_write) > 0:
