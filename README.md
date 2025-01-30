@@ -2,7 +2,7 @@
 
 Welkom bij het bioinformatica deel van 'Find the Superbug'. Onze onderzoekers zijn aan de slag gegaan met de samples die jullie in het veld hebben verzameld, en natuurlijk de samples van de patienten. 
 
-In deze folder vinden jullie samples.txt, in dit bestand zitten de beste DNA fragmenten die wij hebben kunnen sequencen 
+In deze folder vinden jullie **Samples.fasta**, in dit bestand zitten de beste DNA fragmenten die wij hebben kunnen sequencen 
 
 Scroll er eens door. Ja, daar kan je niks mee. DNA data is voor mensen eigenlijk niet te lezen. Daarom hebben we hulp van de computer nodig. We hebben al wat code staan die jullie kan helpen.
 
@@ -11,11 +11,11 @@ Echter is dit programma nog niet compleet af...
 Het stappenplan: 
 
 **Missie 1:** Van de samples die we hebben zijn een deel microben, maar er kan ook nog menselijk DNA van de patienten tussen zitten. 
-Een manier om dit te checken is door het GC-percentage te berkenen. Mensen hebben een GC percentage van ~41% 
+Een manier om dit te checken is door het GC-percentage te berekenen. Mensen hebben een GC percentage van ~41% 
 **gebruik het script 'DNA_Checker.py' om uit te vinden welk DNA menselijk is, en welk DNA niet**
 
-**Missie 2:** Nu we een selectie hebben gaan we op zoek naar genen. DNA wordt vertaald in hapjes van 3, oftewel codons. Voor elk codon 
-staat een Aminozuur, deze vormen uiteindelijk het eiwit. In het script 'DNA_Translator.py' staat een functie 'translate', oftewel vertaal. 
+**Missie 2:** Nu we een selectie hebben gaan we op zoek naar genen. DNA wordt vertaald in hapjes van 3, oftewel codons. Voor elk codon staat een Aminozuur, deze vormen uiteindelijk het eiwit. 
+In het script 'DNA_Translator.py' staat een functie 'translate', oftewel vertaal. 
 Hierin zit een dictionary met alle mogelijke codons, en de aminozuren die daar bij horen. Deze functie is echter nog niet af. 
 **Kunnen jullie deze functie repareren/afmaken?** (Let op: er zijn meerdere Reading Frames)
 
