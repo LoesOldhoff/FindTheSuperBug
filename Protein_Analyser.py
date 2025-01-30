@@ -9,7 +9,7 @@ Can you complete the script?
 import re    # Tells Python we want to use Regular Expressions
 
 
-def ORF_finder(protein, cutoff):
+def ORF_finder(protein):
     """
     Given a protein sequence, the ORF finder finds amino acid sequences
     starting with a Methionine and ending on a stop codon, also returns
@@ -17,10 +17,9 @@ def ORF_finder(protein, cutoff):
     """
     pattern = r'M[A-Z]*\*'
     matches = re.findall(pattern, protein)
-    goodmatches = [match for match in matches if len(match) > cutoff]
-    print(f'{len(matches)}, total ORFs found, {len(goodmatches)} above the cutoff length')
-    if goodmatches:
-        bestmatch = max(goodmatches, key=len)
+    print(f'{len(matches)}, total ORFs found')
+    if matches:
+        bestmatch = max(matches, key=len)
         print(f'Best match has a length of {len(bestmatch)}')
         print(bestmatch)
     else:
